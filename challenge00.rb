@@ -3,7 +3,7 @@
 puts "Enter the subtotal: "
 sub_total_input = gets.chomp
 
-sub_total = 5.00
+sub_total = sub_total_input.to_f
 
 GST = 0.07
 PST = 0.05
@@ -22,3 +22,5 @@ elsif (grand_total > 5.00 && grand_total < 20.00)
 else
     puts 'Charge It!'
 end
+
+
